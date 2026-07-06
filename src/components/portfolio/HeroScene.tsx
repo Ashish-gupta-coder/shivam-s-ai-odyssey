@@ -40,16 +40,16 @@ function CoreOrb() {
   });
   return (
     <Float speed={1.4} rotationIntensity={0.5} floatIntensity={0.8}>
-      <mesh ref={ref} scale={1.6}>
-        <icosahedronGeometry args={[1, 4]} />
+      <mesh ref={ref} scale={1.1} position={[2, 0.2, 0]}>
+        <icosahedronGeometry args={[1, 5]} />
         <MeshDistortMaterial
-          color="#22d3ee"
+          color="#0891b2"
           emissive="#a855f7"
-          emissiveIntensity={0.6}
-          distort={0.45}
-          speed={1.6}
-          roughness={0.15}
-          metalness={0.85}
+          emissiveIntensity={0.25}
+          distort={0.5}
+          speed={1.8}
+          roughness={0.1}
+          metalness={0.95}
         />
       </mesh>
     </Float>
