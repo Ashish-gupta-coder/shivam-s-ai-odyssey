@@ -40,7 +40,7 @@ export const Contact = () => {
                 </a>
               </Button>
               <Button asChild variant="neon" size="lg">
-                <a href={RESUME_URL} download="Shivam_Gupta_Resume.pdf">
+                <a href={RESUME_URL}>
                   <Download className="w-4 h-4" />
                   Download Resume
                 </a>

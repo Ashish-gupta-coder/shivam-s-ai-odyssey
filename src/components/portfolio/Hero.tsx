@@ -54,7 +54,7 @@ export const Hero = () => {
             className="flex flex-wrap gap-3 mb-12"
           >
             <Button asChild variant="hero" size="lg">
-              <a href={RESUME_URL} download="Shivam_Gupta_Resume.pdf">
+              <a href={RESUME_URL} download>
                 <Download className="w-4 h-4" />
                 Download Resume
               </a>
