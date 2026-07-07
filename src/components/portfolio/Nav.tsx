@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Download, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { RESUME_URL } from "@/data/portfolio";
+import RESUME from "../../assets/Shivam Gupta.pdf";
 
 const links = [
   { href: "#hero", label: "Home" },
@@ -59,7 +59,7 @@ export const Nav = () => {
 
           <div className="flex items-center gap-2">
             <Button asChild variant="hero" size="sm" className="hidden sm:inline-flex">
-              <a href={RESUME_URL} download="Shivam_Gupta_Resume.pdf">
+              <a href={RESUME} download>
                 <Download className="w-4 h-4" />
                 Resume
               </a>
