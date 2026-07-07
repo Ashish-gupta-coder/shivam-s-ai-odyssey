@@ -2,8 +2,9 @@ import { motion } from "framer-motion";
 import { Sparkles, Brain, Code2, Zap } from "lucide-react";
 import { HeroScene } from "./HeroScene";
 import { Button } from "@/components/ui/button";
-import { RESUME_URL, PROFILE } from "@/data/portfolio";
+import { PROFILE } from "@/data/portfolio";
 import { Download, ArrowDown } from "lucide-react";
+import  RESUME from "../../assets/Shivam Gupta.pdf";
 
 export const Hero = () => {
   return (
@@ -54,7 +55,7 @@ export const Hero = () => {
             className="flex flex-wrap gap-3 mb-12"
           >
             <Button asChild variant="hero" size="lg">
-              <a href={RESUME_URL} download>
+              <a href={RESUME} download>
                 <Download className="w-4 h-4" />
                 Download Resume
               </a>

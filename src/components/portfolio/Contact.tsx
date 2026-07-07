@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Github, Linkedin, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { PROFILE, RESUME_URL } from "@/data/portfolio";
+import { PROFILE } from "@/data/portfolio";
+import  RESUME  from "../../assets/Shivam Gupta.pdf";
 
 export const Contact = () => {
   const items = [
@@ -40,7 +41,7 @@ export const Contact = () => {
                 </a>
               </Button>
               <Button asChild variant="neon" size="lg">
-                <a href={RESUME_URL}>
+                <a href={RESUME} download>
                   <Download className="w-4 h-4" />
                   Download Resume
                 </a>
